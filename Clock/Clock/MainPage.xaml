@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clock.MainPage"
+             BackgroundColor="{Binding BackgroundColor}"
+             xmlns:viewModels="clr-namespace:Clock.ViewModels;assembly=Clock"
+             x:DataType="viewModels:MainViewModel">
+
+    <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid RowSpacing="3" ColumnSpacing="4" 
+              ColumnDefinitions="6, 30, 6, 6, 30, 6, 6, 6, 30, 6, 6, 30, 6, 6, 6, 30, 6, 6, 30, 6"
+              RowDefinitions="6, 25, 6, 25, 6">
+            <BoxView CornerRadius="2" Grid.Row="0" Grid.Column="1" Color="{Binding Display[0].Indicator0}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="0" Color="{Binding Display[0].Indicator5}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="2" Color="{Binding Display[0].Indicator1}"/>
+            <BoxView CornerRadius="2" Grid.Row="2" Grid.Column="1" Color="{Binding Display[0].Indicator6}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="0" Color="{Binding Display[0].Indicator4}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="2" Color="{Binding Display[0].Indicator2}"/>
+            <BoxView CornerRadius="2" Grid.Row="4" Grid.Column="1" Color="{Binding Display[0].Indicator3}"/>
+
+            <BoxView CornerRadius="2" Grid.Row="0" Grid.Column="4" Color="{Binding Display[1].Indicator0}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="3" Color="{Binding Display[1].Indicator5}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="5" Color="{Binding Display[1].Indicator1}"/>
+            <BoxView CornerRadius="2" Grid.Row="2" Grid.Column="4" Color="{Binding Display[1].Indicator6}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="3" Color="{Binding Display[1].Indicator4}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="5" Color="{Binding Display[1].Indicator2}"/>
+            <BoxView CornerRadius="2" Grid.Row="4" Grid.Column="4" Color="{Binding Display[1].Indicator3}"/>
+
+            <BoxView CornerRadius="2" Grid.Row="0" Grid.Column="8" Color="{Binding Display[2].Indicator0}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="7" Color="{Binding Display[2].Indicator5}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="9" Color="{Binding Display[2].Indicator1}"/>
+            <BoxView CornerRadius="2" Grid.Row="2" Grid.Column="8" Color="{Binding Display[2].Indicator6}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="7" Color="{Binding Display[2].Indicator4}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="9" Color="{Binding Display[2].Indicator2}"/>
+            <BoxView CornerRadius="2" Grid.Row="4" Grid.Column="8" Color="{Binding Display[2].Indicator3}"/>
+
+            <BoxView CornerRadius="2" Grid.Row="0" Grid.Column="11" Color="{Binding Display[3].Indicator0}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="10" Color="{Binding Display[3].Indicator5}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="12" Color="{Binding Display[3].Indicator1}"/>
+            <BoxView CornerRadius="2" Grid.Row="2" Grid.Column="11" Color="{Binding Display[3].Indicator6}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="10" Color="{Binding Display[3].Indicator4}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="12" Color="{Binding Display[3].Indicator2}"/>
+            <BoxView CornerRadius="2" Grid.Row="4" Grid.Column="11" Color="{Binding Display[3].Indicator3}"/>
+
+            <BoxView CornerRadius="2" Grid.Row="0" Grid.Column="15" Color="{Binding Display[4].Indicator0}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="14" Color="{Binding Display[4].Indicator5}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="16" Color="{Binding Display[4].Indicator1}"/>
+            <BoxView CornerRadius="2" Grid.Row="2" Grid.Column="15" Color="{Binding Display[4].Indicator6}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="14" Color="{Binding Display[4].Indicator4}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="16" Color="{Binding Display[4].Indicator2}"/>
+            <BoxView CornerRadius="2" Grid.Row="4" Grid.Column="15" Color="{Binding Display[4].Indicator3}"/>
+
+            <BoxView CornerRadius="2" Grid.Row="0" Grid.Column="18" Color="{Binding Display[5].Indicator0}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="17" Color="{Binding Display[5].Indicator5}"/>
+            <BoxView CornerRadius="2" Grid.Row="1" Grid.Column="19" Color="{Binding Display[5].Indicator1}"/>
+            <BoxView CornerRadius="2" Grid.Row="2" Grid.Column="18" Color="{Binding Display[5].Indicator6}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="17" Color="{Binding Display[5].Indicator4}"/>
+            <BoxView CornerRadius="2" Grid.Row="3" Grid.Column="19" Color="{Binding Display[5].Indicator2}"/>
+            <BoxView CornerRadius="2" Grid.Row="4" Grid.Column="18" Color="{Binding Display[5].Indicator3}"/>
+
+            <BoxView CornerRadius="2" Grid.Row="4" Grid.Column="6" Color="{Binding activeColor}"/>
+            <BoxView CornerRadius="2" Grid.Row="4" Grid.Column="13" Color="{Binding activeColor}"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
